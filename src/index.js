@@ -13,6 +13,7 @@ export default class Lottie extends React.Component {
       loop,
       autoplay,
       animationData,
+      path,
       rendererSettings,
       segments,
     } = options;
@@ -24,7 +25,7 @@ export default class Lottie extends React.Component {
       autoplay: autoplay !== false,
       segments: segments !== false,
       animationData,
-      rendererSettings,
+      path
     };
 
     this.options = { ...this.options, ...options };
